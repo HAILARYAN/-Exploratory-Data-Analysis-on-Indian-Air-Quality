@@ -1,4 +1,4 @@
-# Indian Air Quality: An Exploratory Data Analysis
+# Indian Air Quality analysis using Exploratory Data Analysis
 
 A full EDA workflow in Python, taking daily air quality readings from 12 major Indian cities between 2015 and 2020 from a raw messy CSV through to a written report with charts and conclusions. The cities are Delhi, Mumbai, Kolkata, Chennai, Bengaluru, Hyderabad, Ahmedabad, Pune, Lucknow, Patna, Kanpur and Kochi.
 
