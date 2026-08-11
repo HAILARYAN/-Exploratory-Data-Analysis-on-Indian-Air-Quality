@@ -1,0 +1,23 @@
+# Core analysis stack.
+#
+# The floors are the versions I actually checked this against rather than
+# guesses. pandas 2.0 is where the groupby observed= behaviour settles down,
+# and seaborn 0.13 is where passing hue together with legend=False stops
+# emitting deprecation warnings on every chart.
+pandas>=2.0
+numpy>=1.24
+matplotlib>=3.7
+seaborn>=0.13
+
+# pandas uses this for DataFrame.to_markdown(), which is how the tables get
+# into outputs/EDA_Report.md. It is not pulled in by pandas itself, and its
+# absence only shows up right at the end of a run, which is annoying.
+tabulate>=0.9
+
+# Tests.
+pytest>=7.4
+
+# Only needed to run the notebooks locally. Colab and Jupyter environments
+# already have these, so pip treats them as satisfied and moves on.
+jupyter>=1.0
+notebook>=6.5
